@@ -1,0 +1,15 @@
+[package]
+name = "increment_solana_program"
+version = "1.0.0"
+description = "Example Solana program written in Rust"
+authors = ["Kayhan Alizadeh <kehiiiiya@gmail.com>"]
+repository = "https://github.com/kehiy/sc-collection"
+license = "MIT"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+borsh = "1.3.1"
+borsh-derive = "1.3.1"
+solana-program = "1.17.17"
