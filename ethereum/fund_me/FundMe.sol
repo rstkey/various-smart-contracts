@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
+error NotOwner();
+error WithdrawFaild();
+
 contract FundMe {
     address[] public funders;
     address public immutable i_owner;
@@ -17,11 +20,15 @@ contract FundMe {
         (bool success, ) = payable(msg.sender).call{
             value: address(this).balance
         }("");
-        require(success, "Withdraw failed!");
+        if (!success) {
+            revert WithdrawFaild();
+        }
     }
 
     modifier onlyOwner() {
-        require(msg.sender == i_owner, "Only owner can call this.");
+        if (msg.sender != i_owner) {
+            revert NotOwner();
+        }
         _;
     }
 }
