@@ -25,6 +25,10 @@ contract FundMe {
         }
     }
 
+    receive() external payable {
+        fund();
+    }
+
     modifier onlyOwner() {
         if (msg.sender != i_owner) {
             revert NotOwner();
