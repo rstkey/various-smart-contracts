@@ -2,7 +2,7 @@
 pragma solidity ^0.8.19;
 
 error NotOwner();
-error WithdrawFaild();
+error WithdrawFailed();
 
 contract FundMe {
     address[] public funders;
@@ -21,7 +21,7 @@ contract FundMe {
             value: address(this).balance
         }("");
         if (!success) {
-            revert WithdrawFaild();
+            revert WithdrawFailed();
         }
     }
 
