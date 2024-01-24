@@ -3,10 +3,10 @@ pragma solidity ^0.8.19;
 
 contract FundMe {
     address[] public funders;
-    address public OWNER;
+    address public immutable i_owner;
 
     constructor() {
-        OWNER = msg.sender;
+        i_owner = msg.sender;
     }
 
     function fund() public payable {
@@ -21,7 +21,7 @@ contract FundMe {
     }
 
     modifier onlyOwner() {
-        require(msg.sender == OWNER, "Only owner can call this.");
+        require(msg.sender == i_owner, "Only owner can call this.");
         _;
     }
 }
