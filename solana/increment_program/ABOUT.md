@@ -4,7 +4,7 @@ A basic Solana program (smart-contract) based on [this](https://github.com/solan
 
 ## What it dose?
 
-<!-- TODO -->
+This program just keep track of a counter in it's storage and increase it by eac call and doesn't use or process the input data. This program is written with pure `solana_program` in rust.
 
 ## How to test and deploy?
 
