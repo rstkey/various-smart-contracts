@@ -7,37 +7,37 @@ My smart-contract/program collection on different blockchains
 ### EVM
 
 * [X] Solidity
-* []  Fe
-* []  Vyper
+* [ ]  Fe
+* [ ]  Vyper
 
 ### TON (TVM)
 
 * [X] FunC
 * [X] Tact
-* []  Fift
+* [ ]  Fift
 
 ### Solana
 
 #### Rust
 
 * [X] solana_program
-* []  anchor
+* [ ]  anchor
 
 #### c
 
-* [] C
+* [ ] C
 
 ### Sui
 
-* [] move
+* [ ] move
 
 ### Aptos
 
-* [] move
+* [ ] move
 
 ### Plokadot (Ink/substrate)
 
-* [] ink
+* [ ] ink
 
 ## Why?
 
