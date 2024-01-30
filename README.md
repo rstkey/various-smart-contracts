@@ -2,6 +2,43 @@
 
 My smart-contract/program collection on different blockchains
 
+## Chains & Languages
+
+### EVM
+
+* [X] Solidity
+* []  Fe
+* []  Vyper
+
+### TON (TVM)
+
+* [X] FunC
+* [X] Tact
+* []  Fift
+
+### Solana
+
+#### Rust
+
+* [X] solana_program
+* []  anchor
+
+#### c
+
+* [] C
+
+### Sui
+
+* [] move
+
+### Aptos
+
+* [] move
+
+### Plokadot (Ink/substrate)
+
+* [] ink
+
 ## Why?
 
 I made this repo to keep my smart contracts here. which is used for learning, production use or referencing as examples.
