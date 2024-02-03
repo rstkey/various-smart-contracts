@@ -1,6 +1,8 @@
 # EVM contracts
 
-This directory contains EVM contracts.
+This directory contains EVM contracts. Contracts on Ethereum behave like objects in [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming). 
+
+The Ethereum contracts get executed by Ethereum virtual machine.
 
 ## languages
 
