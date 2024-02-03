@@ -1,6 +1,6 @@
 # TON contracts
 
-This directory contains TON Blockchain and TVM smart contracts.
+This directory contains TON Blockchain and TVM smart contracts. contracts on TON behave like `actors` and we call it actors too. everything on TON is contract or actor even accounts (they are waller contracts).
 
 ## languages
 
