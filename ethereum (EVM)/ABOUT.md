@@ -2,7 +2,9 @@
 
 This directory contains EVM contracts. Contracts on Ethereum behave like objects in [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming). 
 
-The Ethereum contracts get executed by Ethereum virtual machine.
+The Ethereum contracts get executed by Ethereum virtual machine. (they run the EVM [byte codes](https://ethervm.io/))
+
+EVM based contracts and blockchains are all single threaded. That means that one contract at a time modifies the blockchain state.
 
 ## languages
 

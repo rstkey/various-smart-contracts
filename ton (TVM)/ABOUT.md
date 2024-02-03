@@ -2,7 +2,9 @@
 
 This directory contains TON Blockchain and TVM smart contracts. contracts on TON behave like `actors` on [actor paradigm](https://en.wikipedia.org/wiki/Actor_model) and we call it actors too. everything on TON is contract or actor even accounts (they are waller contracts).
 
-Contract calls and execution are handled by ton virtual machine ot TVM.
+Contract calls and execution are handled by ton virtual machine ot TVM. (they run the TVM [byte codes](https://docs.ton.org/learn/archive/tvm-instructions))
+
+> Some more interesting info about TON blockchain: https://docs.ton.org/learn/overviews/ton-blockchain#single-actor
 
 ## languages
 
