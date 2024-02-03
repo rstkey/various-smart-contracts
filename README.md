@@ -27,11 +27,11 @@ My smart-contract/program collection on different blockchains
 
 * [ ] C
 
-### Sui
+### Sui (MoveVM)
 
 * [ ] move
 
-### Aptos
+### Aptos (MoveVM)
 
 * [ ] move
 
