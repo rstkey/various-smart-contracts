@@ -33,7 +33,7 @@ My smart-contract/program collection on different blockchains
 
 ### Aptos (MoveVM)
 
-* [ ] move
+* [X] move
 
 ### Plokadot (Ink/substrate)
 
