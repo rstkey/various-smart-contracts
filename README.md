@@ -35,6 +35,10 @@ My smart-contract/program collection on different blockchains
 
 * [X] move
 
+### Aleo (snarkVM)
+
+* [X] leo
+
 ### Plokadot (Ink/substrate)
 
 * [ ] ink
