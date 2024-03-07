@@ -7,7 +7,7 @@ program counter.aleo {
     }
 
     finalize increase(public addr: address, public num: u8) {
-        let current: u8 = Mapping::get(counter, addr);
+        let current: u8 = Mapping::get_or_use(counter, addr, 0u8);
         Mapping::set(counter, addr, num);
     }
 }
