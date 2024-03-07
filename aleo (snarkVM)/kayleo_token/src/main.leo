@@ -11,7 +11,7 @@ program kayleo_token.aleo {
     }
 
     //! mints new tokens. (owner only)
-    transition mint(amount: u128) -> (Token) {
+    transition mint(amount: u128) -> Token {
         if self.caller.neq(OWNER) {
             return;
         }
@@ -19,10 +19,10 @@ program kayleo_token.aleo {
         return Token {
             owner: OWNER,
             balance: amount,
-        } then finalize(OWNER, amount);
+        } then finalize(amount);
     }
 
-    finalize mint(to: address, amount: u128) {
+    finalize mint(amount: u128) {
         Mapping::set(balances, OWNER, amount);
     }
 
@@ -38,7 +38,7 @@ program kayleo_token.aleo {
 
     finalize transfer(to: address, from: address, amount: u128) {
         let current_sender_balance: u128 = Mapping::get_or_use(balances, from, 0u128);
-        if current_sender_balance >! amount {
+        if current_sender_balance < amount {
             return;
         }
 
@@ -74,18 +74,18 @@ program kayleo_token.aleo {
         return then finalize(token.owner, amount);
     }
 
-    finalize burn(owner: address, amount: u128) {
-        let current_burner_balance: u128 = Mapping::get_or_use(balances, owner, 0u128);
+    finalize burn(from: address, amount: u128) {
+        let current_burner_balance: u128 = Mapping::get_or_use(balances, from, 0u128);
         if current_burner_balance >! amount {
             return;
         }
 
         let new_burner_balance: u128 = current_burner_balance - amount;
 
-        Mapping::set(balances, owner, new_burner_balance);
+        Mapping::set(balances, from, new_burner_balance);
 
         let sender: Token = Token {
-            owner: owner,
+            owner: from,
             balance: new_burner_balance,
         };
     }
