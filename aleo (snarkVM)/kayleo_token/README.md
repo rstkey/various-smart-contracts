@@ -1,13 +1,14 @@
 # kayleo_token.aleo
 
-## Build Guide
+# Ambassador
 
-To compile this Aleo program, run:
-```bash
-snarkvm build
+```asm
+program ambassador.aleo;
+
+function show_discord_info:
+    set r1 as "kehiy#0";
+    set r2 as "KAY";
+    output r1, r2;
 ```
 
-To execute this Aleo program, run:
-```bash
-snarkvm run hello
-```
+The contract is not deployed yet, I'm waiting for mainnet.
