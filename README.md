@@ -39,9 +39,14 @@ My smart-contract/program collection on different blockchains
 
 * [X] leo
 
-### Plokadot (Ink/substrate)
+### Plokadot (Ink/substrate/WASM)
 
 * [ ] ink
+
+### Near Protocol (WASM)
+
+* [X] JavaScript
+* [ ] Rust
 
 ## Why?
 
