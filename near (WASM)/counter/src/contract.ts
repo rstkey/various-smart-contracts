@@ -5,7 +5,7 @@ class CounterContract {
   counter: number = 0;
 
   @view({})
-  get_greeting(): number {
+  get_counter(): number {
     return this.counter;
   }
 
