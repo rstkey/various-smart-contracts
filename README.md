@@ -1,6 +1,6 @@
 # sc-collection
 
-My smart-contract/program collection on different blockchains
+Smart contracts on different blockchains
 
 ## Chains & Languages
 
